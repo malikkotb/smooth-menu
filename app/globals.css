@@ -5,4 +5,18 @@
 li {
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.bar {
+  opacity: 70%;
+  position: absolute;
+  color: white;
+  background-color: white;
+  height: 1px;
+  width: 0;
+}
+
+a {
+  margin-left: 48px;
 }
