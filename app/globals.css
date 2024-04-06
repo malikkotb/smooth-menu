@@ -5,7 +5,8 @@
 li {
   display: flex;
   align-items: center;
-  position: relative;
+  justify-content: space-between;
+  width: 95vw;
 }
 
 .bar {
@@ -19,4 +20,12 @@ li {
 
 a {
   margin-left: 48px;
+}
+
+.mask {
+  overflow: hidden;
+  font-size: smaller;
+}
+.mask .tag {
+  transform: translateY(-100px);
 }
