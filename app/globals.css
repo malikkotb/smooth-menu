@@ -24,7 +24,7 @@ a {
 
 .mask {
   overflow: hidden;
-  font-size: smaller;
+  font-size: 24px;
 }
 .mask .tag {
   transform: translateY(-100px);
