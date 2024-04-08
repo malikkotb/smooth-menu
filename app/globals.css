@@ -2,30 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-li {
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+ul a {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  width: 95vw;
-}
-
-.bar {
-  opacity: 70%;
-  position: absolute;
   color: white;
-  background-color: white;
-  height: 1px;
-  width: 0;
-}
-
-a {
-  margin-left: 48px;
-}
-
-.mask {
+  text-decoration: none;
+  padding: 0.3em 3em;
   overflow: hidden;
-  font-size: 24px;
+  position: relative;
 }
-.mask .tag {
-  transform: translateY(-100px);
+ul a .heading-container {
+  overflow: hidden;
+  height: 40px;
+  display: grid;
+  place-content: center;
+  margin-top: 0.5em;
+}
+ul a p.primary,
+ul a p.secondary {
+  font-size: clamp(2rem, 2vw, 4rem);
+  width: 100%;
+  margin: 0;
+}
+ul a p.primary {
+  transform: translateY(50%);
+}
+
+ul a .line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 3%;
+  border-bottom: 1px solid white;
+  transform-origin: left;
 }

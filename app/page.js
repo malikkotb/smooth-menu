@@ -10,30 +10,9 @@ const projects = [
 ];
 
 export default function Home() {
-  const elementsRef = useRef([]);
-
-  const handleHover = (event) => {
-    gsap.to(event.target, { width: 30 });
-  };
-
-  const handleMouseOut = (event) => {
-    gsap.to(".bar", { width: 0 });
-  };
 
   useEffect(() => {
-    // const tl = gsap.timeline({defaults: { ease: "power4.inOut", duration: 0.3}})
-    // tl.to(".bar", {
-    //   width: 30,
-    // });
 
-    elementsRef.current.forEach((element, index) => {
-      gsap.to(element, { width: 30 });
-    });
-
-    gsap.to(".tag", {
-      y: 0,
-      delay: 0.5,
-    });
   });
 
   return (
@@ -43,15 +22,15 @@ export default function Home() {
           <ul className="text-white text-4xl font-thin flex flex-col gap-12">
             {projects.map((p, index) => (
               <li key={index}>
-                <div className="relative flex items-center justify-between">
-                  <div onMouseEnter={handleHover} onMouseLeave={handleMouseOut} className="bar"></div>
-                  <a href="#" className=" ">
-                    {p.title}
-                  </a>
-                </div>
-                <div className="mask">
-                  <p className="tag">{p.tag}</p>
-                </div>
+                <a href="#">
+                  <div className="heading-container">
+                    <p className="primary">{p.title}</p>
+                    <p className="secondary">{p.title}</p>
+                  </div>
+                  <p>{p.tag}</p>
+                  <div className="line"></div>
+                </a>
+
               </li>
             ))}
           </ul>
