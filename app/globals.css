@@ -26,12 +26,17 @@ ul a .heading-container {
 }
 ul a p.primary,
 ul a p.secondary {
-  font-size: clamp(2rem, 2vw, 4rem);
+  /* font-size: clamp(2rem, 2vw, 4rem); */
   width: 100%;
-  margin: 0;
+  /* margin: 0; */
 }
 ul a p.primary {
   transform: translateY(50%);
+}
+
+ul a p.date {
+  transform: translateY(170%);
+
 }
 
 ul a .line {
@@ -40,5 +45,6 @@ ul a .line {
   left: 0;
   width: 3%;
   border-bottom: 1px solid white;
+  transform: scaleX(0);
   transform-origin: left;
 }
