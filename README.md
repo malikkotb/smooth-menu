@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+https://github.com/malikkotb/smooth-menu/assets/50169361/4313cf8a-285a-4418-b04e-1155426e6128
+
 First, run the development server:
 
 ```bash
