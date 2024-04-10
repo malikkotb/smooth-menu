@@ -20,23 +20,30 @@ ul a {
 ul a .heading-container {
   overflow: hidden;
   height: 40px;
-  display: grid;
-  place-content: center;
-  margin-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
 ul a p.primary,
 ul a p.secondary {
-  /* font-size: clamp(2rem, 2vw, 4rem); */
+  font-size: clamp(2rem, 2vw, 4rem);
+
   width: 100%;
   /* margin: 0; */
 }
 ul a p.primary {
-  transform: translateY(50%);
+  transform: translateY(40%);
+}
+
+ul a p.secondary {
+  transform: translateY(35%);
 }
 
 ul a p.date {
   transform: translateY(170%);
-
+  font-size: .7em;
 }
 
 ul a .line {

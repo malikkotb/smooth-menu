@@ -33,7 +33,7 @@ export default function Home() {
         .to(
           headingEnd,
           {
-            yPercent: -50,
+            yPercent: -85,
           },
           // use "<" for the animations (this one and the one before to start at the same time)
           "<"
